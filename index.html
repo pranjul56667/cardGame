@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cardWarGame</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="header">&hearts;&spades;Card War Game&diams;&clubs;</h1>
+        <section id="container">
+            <div></div>
+            <div>
+                <div class="player">Dealer</div>
+                <div class="score" id="dealerscore"></div>
+                <div class="card">
+                    <div class="card-image">
+                        <div class="card-corner-image"><br>
+                            <label class="cardnum" id="dealercardnum"></label>
+                            <label class="char" id="dealerchar"></label>
+                        </div>
+                        <div class="card-center-image">
+                            <label id="dealerbigchar" class="bigchar"></label>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="winpointer">
+                <label>win</label>
+                <div class="pointer" id="pointer"></div>
+            </div>
+            <div>
+                <div class="player">User</div>
+                <div class="score" id="userscore"></div>
+                <div class="card">
+                    <div class="card-image">
+                        <div class="card-corner-image"><br>
+                            <label class="cardnum" id="usercardnum"></label>
+                            <label class="char" id="userchar"></label>
+                        </div>
+                        <div class="card-center-image">
+                            <label id="userbigchar" class="bigchar"></label>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <div>
+            <button id="mainbtn" onclick="drawcards();">Draw</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="resetbtn" onclick="location.reload();">Reset</button>
+        </div>
+        <section>
+            <div></div>
+            <div class="turns" id="dealerturns"></div>
+            <div></div>
+            <div class="turns" id="userturns"></div>
+            <div></div>
+        </section>
+        <div id="copyright">pranjul56667 © 2023</div>
+    </body>
+    <script src="script.js"></script>
+</html>
